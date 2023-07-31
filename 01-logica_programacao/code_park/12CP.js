@@ -7,11 +7,10 @@ OBS: Optei por começar a resolver as atividades diretamente em JavaScript.
 */
 
 console.log("Iniciando contagem regressiva")
+
 for (var contador = 10; contador >= 0; contador--) {
     console.log(contador,"...");
-    if (contador == 0) {
-        console.log("BUM!");
     }
-}
-
+    
+console.log("BUM!");
  
