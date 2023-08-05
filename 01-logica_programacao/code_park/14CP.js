@@ -8,21 +8,21 @@ var readline = require("readline-sync");
 var nomeCompleto, anoNascimento, idade;
 function calculadoraIdade(){
     while(true){
-        nomeCompleto = readline.question("Qual o seu nome? ");
-        anoNascimento = parseInt(readline.question("Em que ano você nasceu? "));
-        if (isNaN(anoNascimento) == false && anoNascimento >= 1922 && anoNascimento <= 2021) {
-            idade = 2022 - anoNascimento;
-            console.log(`${nomeCompleto}, em 2022, você tem/terá ${idade} anos`);
-            break;
-        } else {
-            throw new Error("Valor informado no ano de nascimento não é válido");
+        try{
+            nomeCompleto = readline.question("Qual o seu nome? ");
+            anoNascimento = parseInt(readline.question("Em que ano você nasceu? "));
+            if (isNaN(anoNascimento) == false && anoNascimento >= 1922 && anoNascimento <= 2021) {
+                idade = 2022 - anoNascimento;
+                console.log(`${nomeCompleto}, em 2022, você tem/terá ${idade} anos`);
+                break;
+            } else {
+                throw new Error("Valor informado no ano de nascimento não é válido");
+            }
+        } catch(error){
+            console.error("ERRO:",error.message);
+            console.log("Tente novamente\n");
         }
-    }
+    } 
 }
 
-try {
-    calculadoraIdade()
-} catch(error){
-    console.log(error);
-    console.log("algo deu errado");
-}
+calculadoraIdade()
