@@ -1,0 +1,19 @@
+{
+  "name": "projeto_node_softex",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante as atividades do curso",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FredericoFavaro/curso_backend_softex.git"
+  },
+  "author": "Frederico Fávaro Ribeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FredericoFavaro/curso_backend_softex/issues"
+  },
+  "homepage": "https://github.com/FredericoFavaro/curso_backend_softex#readme"
+}
