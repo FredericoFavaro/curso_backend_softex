@@ -1,5 +1,5 @@
 const readline = require("readline-sync");
-const clear = require("clear");
+//const clear = require("clear");
 
 let gerador_matricula = 2;
 
@@ -15,6 +15,7 @@ const aluno2 = {
 };
 
 const alunos = [aluno1, aluno2];
+let teste = {teste:alunos};
 let loop = true;
 let matriculaBusca;
 
@@ -34,6 +35,7 @@ while (loop) {
     case 1:
       console.log("Listando todos os alunos");
       console.log("------------------------");
+      console.log(teste);
       for (const a of alunos) {
         let soma = 0;
         console.log(`Matricula: ${a.matricula}`);
