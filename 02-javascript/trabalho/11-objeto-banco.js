@@ -47,16 +47,16 @@ function bancoConta(conta,saldo,tipoDeConta,agencia) {
     this.tipoDeConta = tipoDeConta;
     this.agencia = agencia;
     //metodos
-    this.buscarSaldo = function mostraSaldo() {
+    this.buscarSaldo = function buscarSaldo() {
         return this.saldo;
     }
-    this.deposito = function lala(valor) {
+    this.deposito = function deposito(valor) {
         this.saldo+=valor;
     }
-    this.saque = function lulu(valor) {
+    this.saque = function saque(valor) {
         this.saldo-=valor;
     }
-    this.numeroConta = function lili() {
+    this.numeroConta = function numeroConta() {
         return this.conta;
     }
 }
