@@ -8,7 +8,8 @@ Fontes: https://sequelize.org/docs/v6/getting-started/
 
 const Sequelize = require("sequelize")
 
-const sequelize = new Sequelize('crud-sqlite', 'root', '123456', {
+//em "storage" informar o nome do banco e o local onde sera salvo.
+const sequelize = new Sequelize({
     storage: './database.sqlite',
     dialect: 'sqlite',
 });
