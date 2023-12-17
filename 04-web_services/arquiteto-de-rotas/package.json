@@ -1,0 +1,20 @@
+{
+  "name": "arquiteto-de-rotas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-users.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "node": "^21.2.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
